@@ -1,0 +1,46 @@
+En el ternimal del Mac hacer los siguiente
+    git --version # Esto es para ver si en el Mac esta instalado git
+
+    git config --global user.name " Nombre Apellido"  # La opcion --global indica que se ejecutara globalmente y no por proyecto; las "" es porque se uso un nombre con espacio, si es unico nombre, no se requieren.
+
+    git config --global user.email pepito@contoso.com # Email No lleva "" 
+
+    git config --global core.editor "code --wait"  # --wait es para que la terminal se quede esperando hasta que nosostros cerremos el editor de texto.
+
+    git config --global -e # Esto es para ver nuestro archivo de configuracion Global de git
+
+    git config --global core.autocrlf input # comando para MAC para tratamiento de espacios
+
+ !!! ALERTA IMPORTANTE ¡¡¡ --- NO USAR EL TERMINAL/CMD DE WINDOWS, USAR BASH DE VISUAL STUDIO CODE 
+
+ ### para crear el diectorio de git ###
+
+ mkdir NombreCarpeta # se crea carpeta NombreCarpeta
+ 
+ 
+ ### dentro del directorio se icinicalizar git ###
+
+ git init # comando para icinicalizar git dentro de NombreCarpeta
+
+ ls -a # Lista los archivos ocultos de Nombre carpeta, importante archivo .git
+
+### para ingresar al directorio .git se usa desde la terminal cd .git  y luego se lista el contenido del directorio con ls -a #####
+cd .git 
+ls -a # el resultado debe ser algo simiar a Esto. Aqui queda guardadado todo lo de git, ramas, versiones y commits
+      # se le conoce como DETALLE DE IMPLEMENTACION
+
+            MacBook-Pro-de-Shara:.git felipegutierrez$ ls -a
+            .		HEAD		config		hooks		objects
+            ..		branches	description	info		refs
+
+### desde el directorio NombreCarpeta ejecutamos git status para ver que se ha ejecutado en el directorio
+
+git status ## resultado inicial 
+
+                  MacBook-Pro-de-Shara:PythonGit felipegutierrez$ git status
+                  On branch master
+
+                  No commits yet
+
+                  nothing to commit (create/copy files and use "git add" to track)
+
