@@ -44,3 +44,12 @@ git status ## resultado inicial
 
                   nothing to commit (create/copy files and use "git add" to track)
 
+
+### CREAR VARIABLES DE CONFIGURACION PARA HACER MAS SEGURO EL DESPLIEGUE ###
+
+se debe crear un archivo .env en NombreCarpeta
+
+
+### para hacer que directorios y archivos no se suban o commit ###
+
+se debe crear un archivo .gitignore en NombreCarpeta y dentro de este colocar los directorios y archivos no se suban o commit
