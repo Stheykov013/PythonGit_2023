@@ -53,3 +53,21 @@ se debe crear un archivo .env en NombreCarpeta
 ### para hacer que directorios y archivos no se suban o commit ###
 
 se debe crear un archivo .gitignore en NombreCarpeta y dentro de este colocar los directorios y archivos no se suban o commit
+
+.env
+
+
+### enlazar git con github ###
+
+vamos a github y creamos un repositorio. al Finalizar entrega un codigo
+
+      echo "# PythonGit_2023" >> README.md
+      git init
+      git add README.md
+      git commit -m "first commit"
+      git branch -M main
+      git remote add origin https://github.com/Stheykov013/PythonGit_2023.git
+      git push -u origin main
+
+Lo importante es git remote add origin https://github.com/Stheykov013/PythonGit_2023.git # indica que tenemos un servodor remoto donde guardaremos los cambios
+                 git push -u origin main # recordar que por dafault se crea la rama con el nombre master y se debe cambiar a main
