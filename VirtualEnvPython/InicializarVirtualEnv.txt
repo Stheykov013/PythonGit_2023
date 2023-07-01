@@ -1,0 +1,38 @@
+### Un entorno Virtual es para aislar diferentes dllos y que las librerias(Paquetes)sean independientes por cada entorno y no Globales por maquina (PC) 
+### Como Inicializar un entorno virtual desde VSCODE Teminal
+### Desde la carpeta desde donde vamos a crea en entorno...
+###     MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$ pwd
+###     /Users/felipegutierrez/Desktop/EntornoVirtualPython/VirtualEnv01
+### En este caso estamos desde la carpeta /VirtualEnv01. Desde aqui ejecutamos el este comando  (Probado en MAC)
+python3 -m venv .VirEnv01 # .VirEnv01 siempre colocar el . seguido del nombre de nuestro Entorno Virtual #Ejecutado desde la Terminal
+source .VirEnv/bin/active # con esta linea se activa el entorno virtual. el promp cambia de esto...      #Ejecutado desde la Terminal
+                          # ...                    MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$
+                          # a esto ... (.VirEnv01) MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$
+                          # Notese que al inicio del promp tenemos (.VirEnv01) nuestro Entorno Virtual
+
+### Para ver los paquetes instalados en el entorno
+(.VirEnv01) MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$ pip list #Ejecutado desde la Terminal
+    ### Resultado 
+Package    Version
+---------- -------
+pip        22.3.1
+setuptools 65.5.0
+
+[notice] A new release of pip available: 22.3.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip 
+    ### Este ultimo resultado nos arroja la opcion de actualizar Python para este Entorno Virtual
+(.VirEnv01) MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$ pip install --upgrade pip #Ejecutado desde la Terminal
+
+### Despues de actualizar en Python en el Entorno Virtual, se vuelde a correr el comando pip list #Ejecutado desde la Terminal
+### Cuando esta Actualizado NO aparece la opcion pip install --upgrade pip
+(.VirEnv01) MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$ pip list
+Package    Version
+---------- -------
+pip        23.1.2
+setuptools 65.5.0
+
+### como instalar un paquete en este Entorno Virtual
+
+### IMPORTANTE ### PARA SALIR/CERRAR EL ENTORNO VIRTUAL ES SOLO COLOCAR deactivate #Ejecutado desde la Terminal
+(.VirEnv01) MacBook-Pro-de-Shara:bin felipegutierrez$ deactivate
+MacBook-Pro-de-Shara:bin felipegutierrez$
