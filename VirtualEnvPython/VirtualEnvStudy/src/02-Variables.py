@@ -1,3 +1,7 @@
+import time
+
+inicio = time.time()
+
 # Variables Enteras / Int
 numero = int(5)
 print("Este es un Numero Entero",type(numero)) # type() me muestra que tipo de variable es lo que hay entre ()
@@ -15,3 +19,11 @@ caracter = str(30)
 print("Este es un Caracter",type(caracter)) # type() me muestra que tipo de variable es lo que hay entre ()
     # Resultado
         # Este es un Caracter <class 'str'>
+        
+fin = time.time()
+
+TiempoEjecucion = fin - inicio
+
+print(f"Tiempo de ejecucion {TiempoEjecucion:.5f} segundos")  
+    # Respuesta 
+        #Tiempo de ejecucion 0.00007 segundos
