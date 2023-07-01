@@ -5,7 +5,7 @@
 ###     /Users/felipegutierrez/Desktop/EntornoVirtualPython/VirtualEnv01
 ### En este caso estamos desde la carpeta /VirtualEnv01. Desde aqui ejecutamos el este comando  (Probado en MAC)
 python3 -m venv .VirEnv01 # .VirEnv01 siempre colocar el . seguido del nombre de nuestro Entorno Virtual #Ejecutado desde la Terminal
-source .VirEnv/bin/active # con esta linea se activa el entorno virtual. el promp cambia de esto...      #Ejecutado desde la Terminal
+source .VirEnv/bin/activate # con esta linea se activa el entorno virtual. el promp cambia de esto...      #Ejecutado desde la Terminal
                           # ...                    MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$
                           # a esto ... (.VirEnv01) MacBook-Pro-de-Shara:VirtualEnv01 felipegutierrez$
                           # Notese que al inicio del promp tenemos (.VirEnv01) nuestro Entorno Virtual
