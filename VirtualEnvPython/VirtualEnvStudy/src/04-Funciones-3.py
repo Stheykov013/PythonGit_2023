@@ -1,3 +1,5 @@
+## Funciones que retornan valores
+
 def informacion(paramtro1):
     return paramtro1
 
