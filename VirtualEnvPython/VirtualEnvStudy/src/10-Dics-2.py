@@ -26,6 +26,11 @@ print(jugador["apellido"]) # Acceso al valor sin metodos
 
 for llave , valor in jugador.items(): # nombre_diccionario.items() evalua el elemento de la llave y el elememnto del valor
     print(f"Esta es la llave {llave}", f"Este es el valor {valor}")
+        # Resultado 
+            # Esta es la llave nombre Este es el valor Felipe
+            # Esta es la llave apellido Este es el valor Gutierrez
+            # Esta es la llave email Este es el valor Felipe.madrid@yahoo.es
+            # Esta es la llave nickname Este es el valor Stheykov
  
 ## Eliminar llaves Diccionario. Con solo eliminar las llaves, tambien se eliminan los valores.
     
