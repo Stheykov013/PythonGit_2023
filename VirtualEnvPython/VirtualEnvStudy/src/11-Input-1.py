@@ -16,8 +16,9 @@ if edad >= 18:
 else:
     print("No puedes votar")    
     
-## RETO 
+## RETO ############################################## 
 
+# Pregunta 1
 pregunta1 = input("1. Cuanto es 2 + 2 ? : \r\n")
 pregunta1 = int(pregunta1)
 puntaje = 0
@@ -30,6 +31,7 @@ if pregunta1 == 4:
 else: 
     print(f"Incorrecto tu respuesta fue {pregunta1}")
 
+# Pregunta 2
 pregunta2 = input("2. Que lenguaje estamos aprendiendo ? : \r\n")
 pregunta2 = str(pregunta2.lower())
 
@@ -40,7 +42,8 @@ if pregunta2 == "python":
     puntaje += 1
 else: 
     print(f"Incorrecto tu respuesta fue {pregunta2}")
-    
+
+# Pregunta 3    
 pregunta3 = input("3. Como se llama tu Hija? : \r\n")
 pregunta3 = str(pregunta3.lower())
 
