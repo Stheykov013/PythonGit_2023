@@ -98,3 +98,4 @@
 # restaurante2.get_direccion()  
 
 ## HERENCIA
+##
