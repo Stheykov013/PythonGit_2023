@@ -51,24 +51,42 @@
                     #     self.nombre = nombre   # DEFAULT : PUBLIC
                     #     self._telefono = telefono # PROTECTED
                     #     self.__direccion = direccion # PRIVATE . En caso de que se requiera modificar, se debe de hacer por medio de un METODO GET-SET
+            # Para midificar un Objeto PRIVATE se usa los GETTERS y SETTERS
+                # GET = Obtiene un valor
+                # Set = Agrega un valor   
+
 
 class Restaurante:
     
     def __init__(self,nombre,telefono,direccion): # Este codigo se ejecuta automaticamente gracias al __init__
         self.nombre = nombre # Atributo
-        self.telefono = telefono
-        self.direccion = direccion
+        self._telefono = telefono
+        self.__direccion = direccion
     
     def mostrar_informacion(self):
         print("\r") 
         print(f"Nombre: {self.nombre}")    
-        print(f"Telefono: {self.telefono}")    
-        print(f"Direccion: {self.direccion}") 
+        print(f"Telefono: {self._telefono}")    
+        print(f"Direccion: {self.__direccion}") 
         print("\r")   
+
+# Se crean Funciones Get y Set dentro de la classe
+    def get_direccion(self):
+        print(self.__direccion)
+        
+    
+    def set_direccion(self,direccion):
+        self.__direccion = direccion
+        
+            
                 
 restaurante = Restaurante("IlForno",604,"Superior")
 restaurante.mostrar_informacion()
-restaurante.telefono = 601 # Esto se llama como encapsulamiento
+restaurante._telefono = 601 # Esto se llama como encapsulamiento
 restaurante.mostrar_informacion()
+restaurante.set_direccion("Poblado")
+restaurante.get_direccion()
 restaurante2 = Restaurante("Rancherito",604,"Copacabana")
-restaurante2.mostrar_informacion()  
+restaurante2.mostrar_informacion()
+restaurante2.set_direccion("Girardota")
+restaurante2.get_direccion()  
