@@ -42,3 +42,67 @@ fin = time.time()
 # calculamos en timepo de ejecucion
 tiempo_ejecucion = fin - inicio
 print(f"Este es el tiempo de ejecucion {tiempo_ejecucion:.5f} segundos") # {tiempo_ejecucion:.5f} .5f = 5 cifras despues del . 
+
+
+# Escribir en un Archivo Forma1 open/close
+
+# Abrir archivo 
+archivo = open("Data.txt","a") # "a" significa que el archivo ya existe, lo abriremos y vamos a escribir en el.
+archivo.write("Contenido a escribir en el archivo linea1") # Agregamos una linea1 que dice "Contenido a escribir en el archivo" en el archivo "Data.txt" 
+archivo.write("Contenido al lado de linea1") # Coloca al lado de la linea1 "Contenido al lado de linea1" 
+# Cerar archivo
+archivo.close()
+
+
+# Crear un Archivo Forma1 open/close y excribir en el archivo
+# Abrir archivo 
+archivo = open("Data.txt","w") # "w" significa que si no existe, crea el archivo. Pero si existe, lo sobreescribe en blanco (como nuevo)
+# Cerar archivo
+archivo.close()
+
+# Abrir archivo 
+archivo = open("Data.txt","a") # "a" significa que el archivo ya existe, lo abriremos y vamos a escribir en el.
+archivo.write("Contenido a escribir en el archivo linea1 ") # Agregamos una linea1 que dice "Contenido a escribir en el archivo" en el archivo "Data.txt" 
+archivo.write("Contenido al lado de linea1") # Coloca al lado de la linea1 "Contenido al lado de linea1" 
+# Cerar archivo
+archivo.close()
+
+
+# Cuando el archivo ya esta creado y se requiere escribir lineas nuevas 
+# Abrir archivo 
+archivo = open("Data.txt","a") # "a" significa que el archivo ya existe, lo abriremos y vamos a escribir en el.
+archivo.write("\r\nContenido a escribir en el archivo linea1 \r\n") # Agregamos una linea1 que dice "Contenido a escribir en el archivo" en el archivo "Data.txt" 
+archivo.write("Contenido en linea2 con \\r\\n'\r\n") # Coloca al lado de la linea1 "Contenido al lado de linea1" 
+archivo.write("Contenido en linea3 con \\r\\n'\r\n") # Coloca al lado de la linea1 "Contenido al lado de linea1" 
+archivo.write("Contenido en linea4 con \\r\\n'\r\n") # Coloca al lado de la linea1 "Contenido al lado de linea1" 
+# Cerar archivo
+archivo.close()
+
+# Para ler el contenido total de un archivo
+# Abrir archivo 
+archivo = open("Data.txt","r") # "r" Significa que vamos a leer el conenido de un archivo existente
+print(archivo.read())
+# Cerrar archivo 
+archivo.close()
+
+# Leer archivo linea por linea
+# Abrir el archivo
+archivo = open("Data.txt","r")
+
+linea = archivo.readline()
+
+while linea != "":
+  print(linea)
+  linea = archivo.readline()
+# Cerar archivo
+archivo.close()
+
+# Leer archivo linea por linea con un FOR
+# Abrir el archivo
+archivo = open("Data.txt","r")
+
+for linea in archivo.readline():
+  print(linea)
+
+# Cerar archivo
+archivo.close() 
