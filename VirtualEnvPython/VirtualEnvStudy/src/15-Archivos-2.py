@@ -10,3 +10,5 @@ def app ():
             print(contenido.rstrip()) # Este comando me elimina los saltos de linea al leer el archivo
 
 app()        
+
+

@@ -41,3 +41,17 @@ del jugador["nickname"]
 
 print(jugador)       
         
+## Dict que tiene una Key con valor de una lista
+
+tupla = ("Felipe",546789,"TB")
+lista = ["C#","SQL","MngoDB", "Python"]
+dict = {"Nombre" : "Felipe", "Edad" : 38, "Lenguajes" : lista} # la Key Lenguajes tiene el valor de una lista (lista = ["C#","SQL","MngoDB",2345])
+print(dict)
+
+# Como acceder a una elemento de la { "Key" : ["valor1","valor2","valor3"]}
+
+tupla = ("Felipe",546789,"TB")
+lista = ["C#","SQL","MngoDB", "Python"]
+dict = {"Nombre" : "Felipe", "Edad" : 38, "Lenguajes" : lista} # la Key Lenguajes tiene el valor de una lista (lista = ["C#","SQL","MngoDB",2345])
+print(dict["Lenguajes"][3]) # Imprime el valor de la lista en la posicion 3
+        
