@@ -1,0 +1,6 @@
+Datos:
+    - los datos son registros en memoria
+    - los datos no son informacion.
+Informacion:
+    - Conjunto de datos procesados que se convierten en informacion.
+Procesamiento: Asignarle significado a un dato.    
