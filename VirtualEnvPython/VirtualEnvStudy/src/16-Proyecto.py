@@ -88,7 +88,7 @@ def mostrar_contactos():
 def editar_contacto():
     nombre_anterior = input("Nombre del contacto que desea editar: \r\n")
     # Revisar si el archivo ya existe antes de crearlo
-    existe = existe_conacto(nombre_anterior)
+    existe = existe_contacto(nombre_anterior)
     
     if existe:
         print("Puedes Editar: ")
@@ -121,7 +121,7 @@ def agregar_contacto():
     nombre_contacto = input("Nombre: \r\n")  
     
     # Revisar si el archivo ya existe antes de crearlo
-    existe = existe_conacto(nombre_contacto)
+    existe = existe_contacto(nombre_contacto)
     if not existe:
     
         with open(CARPETA + nombre_contacto + EXTENSION,"w") as archivo:
@@ -156,7 +156,7 @@ def mostrar_menu():
     print("5) Eliminar Contacto \r\n")
     print("6) Salir \r\n")
 # Esta funcion me retorna un valor Boolerano True/False
-def existe_conacto (nombre_contacto):
+def existe_contacto (nombre_contacto):
     return os.path.isfile(CARPETA + nombre_contacto + EXTENSION)
 
 app()
